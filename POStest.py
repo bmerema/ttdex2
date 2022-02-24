@@ -30,3 +30,7 @@ def test_valid_input():
     on_barcode('56789')
     assert last_text_displayed() == "$22.50"
 
+def test_lookup_table():
+    on_barcode('56789')
+    assert last_text_displayed() == "$22.50"
+
