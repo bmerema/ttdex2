@@ -2,7 +2,8 @@ def on_barcode(barcode):
     global amount
     if barcode == '12345\n':
         amount = "$11.50"
-    else:
+    elif barcode == '56789\n':
+        amount = "$22.50"
         try:
             int(barcode)
             amount = "$12.50"

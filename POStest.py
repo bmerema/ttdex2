@@ -27,5 +27,6 @@ def test_string_with_trailing_tab_invalid_input():
     assert last_text_displayed() == "invalid"
 
 def test_valid_input():
-    on_barcode('12345\n')
-    assert last_text_displayed() == "$11.50"
+    on_barcode('56789')
+    assert last_text_displayed() == "$22.50"
+
