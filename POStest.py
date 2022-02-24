@@ -19,8 +19,8 @@ def test_input_non_number_characters():
     assert last_text_displayed() == "invalid"
 
 def test_string_with_trailing_space_invalid_input():
-    on_barcode("54321 ")
-    assert last_text_displayed() == "invalid"
+    on_barcode("54321")
+    assert last_text_displayed() == "Product not found for:54321"
 
 def test_string_with_trailing_tab_invalid_input():
     on_barcode("34235\t")

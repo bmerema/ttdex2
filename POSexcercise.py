@@ -6,7 +6,7 @@ def on_barcode(barcode):
     elif barcode in products.keys():
         amount = products[barcode]
     else:
-        amount = "invalid"
+        amount = "Product not found for:" + barcode
     #elif barcode == '12345\n':
     #    amount = "$11.50"
     #elif barcode == '56789\n':
