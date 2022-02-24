@@ -1,6 +1,8 @@
 def on_barcode(barcode):
     global amount
-    if barcode == '12345\n':
+    if barcode =="":
+        amount = "Scanning error: empty barcode"
+    elif barcode == '12345\n':
         amount = "$11.50"
     elif barcode == '56789\n':
         amount = "$22.50"
