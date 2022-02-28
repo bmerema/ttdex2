@@ -1,4 +1,4 @@
-def on_barcode(barcode):
+def Sale(barcode):
     global amount
     if barcode == "":
         amount = "Scanning error: empty barcode"
