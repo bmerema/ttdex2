@@ -12,12 +12,10 @@ def test_valid_input():
 
 def test_invalid_input_blank_string():
     Sale("")
-    assert last_text_displayed() == "Scanning error: empty barcode"
-
+    assert emptybarcode() == "Scanning error: empty barcode"
 
 def test_string_with_trailing_space_invalid_input():
-    Sale("54321")
-    assert last_text_displayed() == "Product not found for:54321"
+    assert productnotfound("54321") == "Product not found for:54321"
 
 def test_string_with_trailing_tab_invalid_input():
     Sale("34235")
